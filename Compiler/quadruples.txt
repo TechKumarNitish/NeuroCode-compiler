@@ -2,3 +2,5 @@
 	pop	x
 	push	1
 	pop	y
+	push	x
+	print

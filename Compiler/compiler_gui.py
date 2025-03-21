@@ -85,7 +85,7 @@ ide_frame.grid(row=1,column=0)
 ide_frame.configure(bg="white")
 
 #Code Frame
-l = Label(ide_frame,text = "My IDE",font=18,bg='white')
+l = Label(ide_frame,text = "IDE",font=18,bg='white')
 l.grid(row= 1, column=0)
 code_frame = LabelFrame(ide_frame, padx=6, pady=0 )
 code_frame.grid(row=2, column=0,sticky=W)
@@ -99,7 +99,7 @@ symtable_frame.grid(row=2, column=1,sticky=W)
 symtable_frame.configure(bg='black')
 
 #Quadruples Frame
-l2 = Label(ide_frame,text = "Quadruples",font=18,bg='white')
+l2 = Label(ide_frame,text = "Intermediate Code",font=18,bg='white')
 l2.grid(row= 1, column=2)
 quadruples_frame = LabelFrame(ide_frame, padx=6, pady=0 )
 quadruples_frame.grid(row=2, column=2, sticky=W)

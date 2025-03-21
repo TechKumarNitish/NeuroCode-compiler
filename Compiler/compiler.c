@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() {
+int main(int argc, char *argv[]) {
     // Create and clear files
     FILE *file_errors = fopen("errors.txt", "w");
     FILE *file_quad = fopen("quadruples.txt", "w");
@@ -18,12 +18,12 @@ int main() {
     fclose(file_symtable);
     
     // Get input file name from the user
-    char filename[256];
-    printf("Enter the input file name: ");
-    scanf("%255s", filename);
+    // char filename[256];
+    // printf("Enter the input file name: ");
+    // scanf("%255s", filename);
     
     // Read the input file content
-    FILE *input_file = fopen(filename, "r");
+    FILE *input_file = fopen(argv[1], "r");
     if (!input_file) {
         printf("Error opening input file.\n");
         return 1;
